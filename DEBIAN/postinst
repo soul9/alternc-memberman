@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+echo "Installing mysql table"
+mysql --defaults-file=/etc/alternc/my.cnf < /usr/share/alternc/install/memberman.sql
