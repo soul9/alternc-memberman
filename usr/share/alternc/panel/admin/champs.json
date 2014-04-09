@@ -1,0 +1,103 @@
+{
+	"champs": [
+	{
+		"name" : "login",
+		"value" : "$login",
+		"text" : "Login",
+		"type" : "text",
+		"class" : "any",
+		"obligatoire" : "1"
+	},
+	{
+		"name" : "mdp",
+		"text" : "Mot de passe",
+		"type" : "password",
+		"class" : "any",
+		"obligatoire" : "1"
+	},
+	{
+		"name" : "conf",
+		"text" : "Confirmation",
+		"type" : "password",
+		"class" : "any",
+		"obligatoire" : "1"
+	},
+	{
+		"name" : "forfait",
+		"text" : "Forfait",
+		"type" : "radio",
+		"class" : "any",
+		"obligatoire" : "1",
+		"radio_opts" : [
+			{
+					"name" : "petit",
+					"text" : "Petit"
+			},
+			{
+					"name" : "moyen",
+					"text" : "Moyen"
+			},
+			{
+					"name" : "grand",
+					"text" : "Grand"
+			}
+		]
+	},
+	{
+		"name" : "nom",
+		"text" : "Nom",
+		"type" : "text",
+		"class" : "any",
+		"obligatoire" : "1"
+	},
+	{
+		"name" : "prenom",
+		"text" : "Prenom",
+		"type" : "text",
+		"class" : "any",
+		"obligatoire" : "1"
+	},
+	{
+		"name" : "email",
+		"text" : "Adresse mail",
+		"type" : "email",
+		"class" : "any",
+		"obligatoire" : "1"
+	},
+	{
+		"name" : "nomAsso",
+		"text" : "Nom Association",
+		"type" : "text",
+		"class" : "asso",
+		"obligatoire" : "1"
+	},
+	{
+		"name" : "activite",
+		"text" : "Activite Association",
+		"type" : "text",
+		"class" : "asso",
+		"obligatoire" : "0"
+	},
+	{
+		"name" : "categorie",
+		"text" : "Resultat annuel",
+		"type" : "radio",
+		"class" : "asso",
+		"obligatoire" : "1",
+		"radio_opts" : [
+			{
+				"name" : "petite",
+				"text" : "Inferieur a 5 000 euros, cotisation de 18 euros"
+			},
+			{
+				"name" : "moyenne",
+				"text" : "Entre 5 000 euros et 150 000 euros, cotisation de 30 euros"
+			},
+			{
+				"name" : "grande",
+				"text" : "Superieur a 150 000 euros, cotisation de 48 euros"
+			}
+		]
+	}
+	]
+}

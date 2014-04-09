@@ -20,6 +20,9 @@
 	require_once("../class/config.php");
 	include_once("head.php");
 
+	$json = file_get_contents("champs.json");
+	$parsed_json = json_decode($json);
+
 	if (!$admin->enabled) {
 		__("This page is restricted to authorized staff");
 		exit();
@@ -326,7 +329,7 @@
 
 			<tr>
 			<th>Cotisation<span class="error"><?php echo $categorieErr;?></span></th>
-			<td>Résultat annuel :<br/><input type="radio" name="categorie" value="petite" <?php if($categorie == "petite") echo "checked"; ?> /> Inf&eacute;rieur &agrave; 5 000&euro;, cotisation de 18&euro;<br />
+			<td>R&eacute;sultat annuel :<br/><input type="radio" name="categorie" value="petite" <?php if($categorie == "petite") echo "checked"; ?> /> Inf&eacute;rieur &agrave; 5 000&euro;, cotisation de 18&euro;<br />
 			<input type="radio" name="categorie" value="moyenne" <?php if($categorie == "moyenne") echo "checked"; ?> /> Entre 5 000&euro; et 150 000&euro;, cotisation de 30&euro;<br />
 			<input type="radio" name="categorie" value="grande" <?php if($categorie == "grande") echo "checked"; ?> /> Sup&eacute;rieur &agrave; 150 000&euro;, cotisation de 48&euro;</td>
 			</tr>

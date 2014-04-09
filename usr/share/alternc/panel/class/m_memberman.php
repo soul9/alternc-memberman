@@ -24,6 +24,12 @@ class m_memberman {
 					'class' => 'memberman',
 				),
 				array(
+					'txt'   => _("Modifier formulaire"), 
+					'url'   => 'modifier_formulaire.php',
+					'ico'	=> '',
+					'class' => 'memberman',
+				),
+				array(
 					'txt'   => _("Tableau forfaits"), 
 					'url'   => 'tableau_forfaits.php',
 					'ico'	=> '',
