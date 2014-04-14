@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+CONFIGFILE="/etc/alternc/my.cnf"
+
+case "$1" in
+  remove)
+   	alternc.install || true
+    ;;
+  purge)
+	if [ -e "$CONFIGFILE" -a -x "/usr/bin/mysql" ]; then
+		mysql --defaults-file=${CONFIGFILE} -f -e "DROP TABLE IF EXISTS memberman"
+	fi
+    ;;
+esac

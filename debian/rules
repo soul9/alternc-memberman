@@ -1,0 +1,5 @@
+#!/usr/bin/make -f
+
+install: build
+	install -m 0644 mailman.sql \
+		debian/alternc-memberman/usr/share/alternc/install/

@@ -1,103 +1,29 @@
 {
-	"champs": [
-	{
-		"name" : "login",
-		"value" : "$login",
-		"text" : "Login",
-		"type" : "text",
-		"class" : "any",
-		"obligatoire" : "1"
-	},
-	{
-		"name" : "mdp",
-		"text" : "Mot de passe",
-		"type" : "password",
-		"class" : "any",
-		"obligatoire" : "1"
-	},
-	{
-		"name" : "conf",
-		"text" : "Confirmation",
-		"type" : "password",
-		"class" : "any",
-		"obligatoire" : "1"
-	},
-	{
-		"name" : "forfait",
-		"text" : "Forfait",
-		"type" : "radio",
-		"class" : "any",
-		"obligatoire" : "1",
-		"radio_opts" : [
-			{
-					"name" : "petit",
-					"text" : "Petit"
-			},
-			{
-					"name" : "moyen",
-					"text" : "Moyen"
-			},
-			{
-					"name" : "grand",
-					"text" : "Grand"
-			}
-		]
-	},
-	{
-		"name" : "nom",
-		"text" : "Nom",
-		"type" : "text",
-		"class" : "any",
-		"obligatoire" : "1"
-	},
-	{
-		"name" : "prenom",
-		"text" : "Prenom",
-		"type" : "text",
-		"class" : "any",
-		"obligatoire" : "1"
-	},
-	{
-		"name" : "email",
-		"text" : "Adresse mail",
-		"type" : "email",
-		"class" : "any",
-		"obligatoire" : "1"
-	},
-	{
-		"name" : "nomAsso",
-		"text" : "Nom Association",
-		"type" : "text",
-		"class" : "asso",
-		"obligatoire" : "1"
-	},
-	{
-		"name" : "activite",
-		"text" : "Activite Association",
-		"type" : "text",
-		"class" : "asso",
-		"obligatoire" : "0"
-	},
-	{
-		"name" : "categorie",
-		"text" : "Resultat annuel",
-		"type" : "radio",
-		"class" : "asso",
-		"obligatoire" : "1",
-		"radio_opts" : [
-			{
-				"name" : "petite",
-				"text" : "Inferieur a 5 000 euros, cotisation de 18 euros"
-			},
-			{
-				"name" : "moyenne",
-				"text" : "Entre 5 000 euros et 150 000 euros, cotisation de 30 euros"
-			},
-			{
-				"name" : "grande",
-				"text" : "Superieur a 150 000 euros, cotisation de 48 euros"
-			}
-		]
-	}
-	]
+
+"champs": [
+
+{ "name" : "login", "text" : "Login", "type" : "text", "class" : "any", "obligatoire" : "1" },
+
+{ "name" : "mdp", "text" : "Mot de Passe", "type" : "password", "class" : "any", "obligatoire" : "1" },
+
+{ "name" : "conf", "text" : "Confirmation", "type" : "password", "class" : "any", "obligatoire" : "1" },
+
+{ "name" : "forfait", "text" : "Forfait", "type" : "radio", "class" : "any", "obligatoire" : "1", "options" : [ { "name" : "petit", "text" : "Petit" }, { "name" : "moyen", "text" : "Moyen" }, { "name" : "grand", "text" : "Grand" } ] },
+
+{ "name" : "nom", "text" : "Nom", "type" : "text", "class" : "any", "obligatoire" : "1" },
+
+{ "name" : "prenom", "text" : "Prenom", "type" : "text", "class" : "any", "obligatoire" : "1" },
+
+{ "name" : "email", "text" : "Adresse mail", "type" : "email", "class" : "any", "obligatoire" : "1" },
+
+{ "name" : "nomAsso", "text" : "Nom Association", "type" : "text", "class" : "asso", "obligatoire" : "1" },
+
+{ "name" : "activite", "text" : "Activite Association", "type" : "text", "class" : "asso", "obligatoire" : "0" },
+
+{ "name" : "categorie", "text" : "Resultat annuel", "type" : "radio", "class" : "asso", "obligatoire" : "1", "options" : [ { "name" : "petite", "text" : "Inferieur a 5 000 euros, cotisation de 18 euros" }, { "name" : "moyenne", "text" : "Entre 5 000 euros et 150 000 euros, cotisation de 30 euros" }, { "name" : "grande", "text" : "Superieur a 150 000 euros, cotisation de 48 euros" } ] },
+
+{ "name" : "cotisation", "text" : "Cotisation", "type" : "radio", "class" : "pers", "obligatoire" : "1", "options" : [ { "name" : "pers", "text" : "Personne seule, cotisation de 12 euros" } ] },
+
+{ "name" : "cb", "text" : "Test checkbox", "type" : "checkbox", "class" : "pers", "obligatoire" : "1", "options" : [ { "name" : "0", "text" : "Checkbox 0" }, { "name" : "1", "text" : "Checkbox 1" }, { "name" : "2", "text" : "Checkbox 2" } ] } ]
+
 }

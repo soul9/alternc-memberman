@@ -1,0 +1,8 @@
+Package: alternc-memberman
+Version: 1.0
+Priority: optional
+Section: admin
+Architecture: all
+Depends: mysql-client, alternc
+Maintainer: Adelin Marrot <adelin.marrot@hotmail.fr>
+Description: Module optionel de gestion de membres pour AlternC

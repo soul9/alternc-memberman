@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+echo "Installing mysql table"
+mysql --defaults-file=/etc/alternc/my.cnf < /usr/share/alternc/install/memberman.sql
+
+# echo "Installing default fields"
+# mysql --defaults-file=/etc/alternc/my.cnf -Bse "INSERT INTO memberman SET clef='typeAP', valeur='Type', uid='O', type='any', obligatoire='1';"
